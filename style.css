@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background-image: linear-gradient(-45deg, #4481eb, #04befe);
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.sign-in {
+    z-index: 2;
+}
+
+.sign-up {
+    z-index: 1;
+    opacity: 0;
+}
+
+.sign-in-2 {
+    z-index: 1;
+    opacity: 0;
+}
+
+.sign-up-2 {
+    z-index: 2;
+}
+
+.text {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.1rem;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.btn {
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #5995fd;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #acacac;
+}
+
+.text2 {
+    padding: .7rem 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 46px;
+    width: 46px;
+    margin: 0 0.4rem;
+    display: flex;
+    border: 1px solid #333;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    background-color: #acacac;
+    color: #4481eb;
+    border-color: #4481eb;
+}
+
+.left-panel {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #fff;
+    padding: 10px;
+}
+
+.btn-signup {
+    width: 150px;
+    height: 49px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.btn-signup:hover {
+    background: #fff;
+    color: #04befe;
+}
+
+.panel {
+    padding: 10px;
+}

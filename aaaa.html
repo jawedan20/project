@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <form action="" method="POST" id="sign-in" class="sign-in">
+                <h1 class="text">Login</h1>
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input id="email" type="text" name="username" placeholder="username">
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    <input id="password" type="password" name="password" placeholder="Password">
+                </div>
+                <input class="btn" value="login" type="submit">
+                <p class="text2">or login with</p>
+                <div class="social-media">
+                    <a href="" class="social-icon">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fa fa-instagram"></i>
+
+                    </a>
+                </div>
+            </form>
+            <form action="" method="GET" id="sign-up" class="sign-up">
+                <h1 class="text">SIGN UP</h1>
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username" placeholder="username">
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" placeholder="email">
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <input class="btn" value="SIGN UP" type="submit">
+                <p class="text2">or login with</p>
+                <div class="social-media">
+                    <a href="" class="social-icon">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="left-panel">
+        <div>
+            <h1 class="panel">Dont have account?</h1>
+            <h3 class="panel">create account to more experience</h3>
+            <input class="btn-signup" onclick="signup()" type="button" value="SIGN UP">
+        </div>
+    </div>
+
+    <script src="set.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</body>
+
+</html>
